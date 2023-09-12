@@ -413,6 +413,8 @@ JavaThread::JavaThread() :
   _vm_result(nullptr),
   _vm_result_2(nullptr),
 
+  _backoff_secondary_super_miss(SecondarySuperMissBackoff),
+
   _current_pending_monitor(nullptr),
   _current_pending_monitor_is_from_java(true),
   _current_waiting_monitor(nullptr),
